@@ -39,8 +39,8 @@ function checkPasscode() {
 function showCongratsMessage() {
     const question1 = document.getElementById('question1');
     question1.innerHTML = `
-        <h2>🎉 Great job! 🎉</h2>
-        <p>You got it right! Let's move on to the next question...</p>
+        <h2>🎉 wow good job! 🎉</h2>
+        <p>next question...</p>
         <button onclick="showNextQuestion()" class="next-button">Next Question</button>
     `;
 }
