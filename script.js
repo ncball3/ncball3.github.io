@@ -36,10 +36,25 @@ function checkPasscode() {
     }
 }
 
+function showCongratsMessage() {
+    const question1 = document.getElementById('question1');
+    question1.innerHTML = `
+        <h2>🎉 Great job! 🎉</h2>
+        <p>You got it right! Let's move on to the next question...</p>
+        <button onclick="showNextQuestion()" class="next-button">Next Question</button>
+    `;
+}
+
+function showNextQuestion() {
+    document.getElementById('question1').style.display = 'none';
+    document.getElementById('question2').style.display = 'block';
+}
+
 function checkAnswer(questionNumber, answer) {
     if (answer === answers[questionNumber]) {
-        currentQuestion++;
-        if (currentQuestion === 2) {
+        if (questionNumber === 1) {
+            showCongratsMessage();
+        } else if (questionNumber === 2) {
             document.getElementById('quiz-screen').classList.remove('active');
             document.getElementById('prize-screen').classList.add('active');
         }
