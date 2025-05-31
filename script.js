@@ -54,7 +54,7 @@ function checkAnswer(questionNumber, answer) {
     if (answer === answers[questionNumber]) {
         if (questionNumber === 1) {
             showCongratsMessage();
-        } else if (questionNumber === 2) {
+        } else if (questionNumber === 2 && document.getElementById('question2').style.display !== 'none') {
             document.getElementById('quiz-screen').classList.remove('active');
             document.getElementById('prize-screen').classList.add('active');
         }
