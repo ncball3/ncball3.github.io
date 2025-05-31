@@ -159,4 +159,33 @@ button:hover {
     .options {
         grid-template-columns: 1fr;
     }
+}
+
+.next-button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+    margin-top: 1rem;
+}
+
+.next-button:hover {
+    transform: translateY(-2px);
+    background: #45a049;
+}
+
+#question1 h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#question1 p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
 } 
