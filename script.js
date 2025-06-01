@@ -30,10 +30,15 @@ function checkPasscode() {
     const passcode = document.getElementById('passcode').value;
     if (passcode === '0410') {
         document.getElementById('passcode-screen').classList.remove('active');
-        document.getElementById('quiz-screen').classList.add('active');
+        document.getElementById('welcome-screen').classList.add('active');
     } else {
         alert('Incorrect code. Try again!');
     }
+}
+
+function startQuiz() {
+    document.getElementById('welcome-screen').classList.remove('active');
+    document.getElementById('quiz-screen').classList.add('active');
 }
 
 function showCongratsMessage() {
