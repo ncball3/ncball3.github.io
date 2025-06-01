@@ -188,4 +188,79 @@ button:hover {
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 1.5rem;
+}
+
+.anniversary-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+.anniversary-title h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #ff6b6b;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.anniversary-title .subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem auto;
+    padding: 0;
+    max-width: 320px;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.memory-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.memory-image:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .image-grid {
+        max-width: 90vw;
+        gap: 0.5rem;
+    }
+    .image-container {
+        width: 40vw;
+        height: 40vw;
+        min-width: 100px;
+        min-height: 100px;
+    }
 } 
