@@ -22,7 +22,7 @@ updateTimer();
 // Quiz functionality
 let currentQuestion = 0;
 const answers = {
-    1: 4,
+    1: 5,
     2: 'New York'
 };
 
